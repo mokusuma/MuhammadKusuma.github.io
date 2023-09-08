@@ -1,7 +1,7 @@
 /* menghilangkan scollbar pada crhome dan edge */
-/* ::-webkit-scrollbar{
+::-webkit-scrollbar{
     display: none;
-} */
+}
 
 /* menghilangkan scollbar pada firefox */
 html{
