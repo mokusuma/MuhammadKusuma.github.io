@@ -54,11 +54,12 @@ function showAnimation(showAnimate, observer) {
         }
     });
 
+    const edu = document.querySelector('.edu-scroll');
     const edu2 = document.querySelector('.edu-2');
     if(edu2.classList.contains('animate')){
+        edu.style.overflow = 'hidden';
         document.querySelector('footer').style.display = 'flex';
         document.querySelector('.penutup').style.display = 'block';
-        console.log('p')
     }
     
 }
