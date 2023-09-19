@@ -778,10 +778,3 @@ footer p.animate{
     }
 
 }
-
-header, .pengenalan, .pengertian, .business, .education{
-    display: none;
-    visibility: hidden;
-    width: 0;
-    height: 0;
-}
