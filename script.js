@@ -14,23 +14,21 @@ function showAnimation(showAnimate, observer) {
     const healthcare2 = document.querySelector('.healthcare2');
 
     if(healthcare1.classList.contains('animate')) {
-        document.querySelector('.penutup').style.display = "none";
-        document.querySelector('.education').style.display = "none";
-        document.querySelector('footer').style.display = "none";
-        document.querySelector('header').style.display = "flex";
-        document.querySelector('.business').style.display = "block";
-        document.querySelector('.pengenalan').style.display = "flex";
-        document.querySelector('.pengertian').style.display = "flex";
+        document.querySelector('.penutup').style.display = 'none';
+        document.querySelector('.education').style.display = 'none';
+        document.querySelector('footer').style.display = 'none';
+        document.querySelector('header').style.display = 'flex';
+        document.querySelector('.business').style.display = 'block';
+        document.querySelector('.pengenalan').style.display = 'flex';
+        document.querySelector('.pengertian').style.display = 'flex';
     }  
     
     if(healthcare2.classList.contains('animate')) {
-        document.querySelector('header').style.display = "none";
-        document.querySelector('.business').style.display = "none";
-        document.querySelector('.pengenalan').style.display = "none";
-        document.querySelector('.pengertian').style.display = "none";
-        document.querySelector('.penutup').style.display = "block";
-        document.querySelector('.education').style.display = "block";
-        document.querySelector('footer').style.display = "block";
+        document.querySelector('header').style.display = 'none';
+        document.querySelector('.business').style.display = 'none';
+        document.querySelector('.pengenalan').style.display = 'none';
+        document.querySelector('.pengertian').style.display = 'none';
+        document.querySelector('.education').style.display = 'block';
     }
     if (healthcare1.classList.contains('animate') || healthcare2.classList.contains('animate')) {
         preventScroll = false;
@@ -55,6 +53,13 @@ function showAnimation(showAnimate, observer) {
           edu.style.overflow = 'hidden';
         }
     });
+
+    const edu2 = document.querySelector('.edu-2');
+    if(edu2.classList.contains('animate')){
+        document.querySelector('footer').style.display = 'flex';
+        document.querySelector('.penutup').style.display = 'block';
+        console.log('p')
+    }
     
 }
 
